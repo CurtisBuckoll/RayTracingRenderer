@@ -1,0 +1,6 @@
+{
+        camera -1 -1 1 1 50 500
+}
+translate -30 0 50
+
+file "camScene"

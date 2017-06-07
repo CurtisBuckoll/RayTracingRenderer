@@ -1,0 +1,94 @@
+phong
+{
+    camera (-1 -1 1 1) 1 10000
+}
+translate 0, 5, 70
+rotate X -15
+#rotate Y 90
+scale 1 -1 1
+
+ambient  0.01 0.01 0.01
+
+#------------------------------------------#
+
+# the light source
+
+{
+    translate 20 40 -15
+    light 3.5 3.5 3.5 0.1 0.1
+}
+
+# the light source
+
+{
+    translate -15 40 -60
+    light 3.5 3.5 3.5 0.1 0.1
+}
+
+#------------------------------------------#
+
+# the objects in scene
+
+surface (0.6, 0.6, 0.6) 0.3 80
+{
+    translate 0, 0, 20
+    rotate X 90
+    scale 500 600 -65
+    obj "quad"
+}
+
+
+scale 0.4 0.4 0.4
+surface (0.5 0.1 0.1) 0.3 120
+{
+    translate -70, 10, 30
+    rotate Y 40
+    rotate Z 50
+    scale 42, 42, 42
+
+    obj "cube"
+}
+
+surface (0.1 0.5 0.1) 0.3 120
+{
+    translate 60, 30, 20
+    rotate Y 67
+    rotate X 120
+    rotate Z 80
+    scale 30, 30, 30
+
+    obj "cube"
+}
+
+surface (0.1 0.1 0.6) 0.3 120
+{
+    translate -80, -30, 0
+    rotate X -20
+    rotate Z 65
+    scale 40, 40, 40
+
+    obj "cube"
+}
+
+surface (0.1 0.6 0.6) 0.3 120
+{
+    translate (0, -40, 65)
+    rotate Y -54
+    rotate X 45
+    rotate Z 30
+    scale (60, 60, 60)
+
+    obj "cube"
+}
+
+surface (0.6 0.6 0.1) 0.3 120
+{
+    translate (-10, 30, 60)
+    rotate Y 70
+    rotate X 45
+    rotate Z -20
+    scale (20, 20, 20)
+
+    obj "cube"
+}
+

@@ -1,0 +1,27 @@
+{
+        #rotate Y 0
+        #translate 30, 0, -200
+        camera -1 -1 1 1 50 500
+}
+
+ambient  1 1 1
+
+
+surface (1.0, 1.0, 1.0) 0.3 100
+translate 0 0 50
+rotate Y 45
+
+surface 0 0.5 1 1 1
+
+{
+	translate -25 0 0
+	scale 20 20 20
+	obj "triangle"
+}
+
+surface 0.5 1 0 1 1
+{
+	translate 25 -30 0
+	scale 20 20 20
+	obj "triangle"
+}
